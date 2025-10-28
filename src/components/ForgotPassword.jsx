@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./login.css"; // reuse same CSS
+import "./auth-layout.css";
+
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
