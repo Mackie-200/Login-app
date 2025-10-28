@@ -1,0 +1,179 @@
+/* =============================
+   Global Styles - Purple Theme
+   ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #8e44ad, #9b59b6);
+  overflow: hidden; /* 🚫 Disable scrolling */
+}
+
+/* =============================
+   Container
+   ============================= */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Perfect center vertically */
+  width: 100vw;
+}
+
+/* =============================
+   Form Card
+   ============================= */
+.login-form {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.login-form:hover {
+  transform: translateY(-5px);
+}
+
+/* =============================
+   Headings and Text
+   ============================= */
+.login-form h2 {
+  text-align: center;
+  color: #5e2b97;
+  margin-bottom: 10px;
+}
+
+.login-subtext {
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+}
+
+/* =============================
+   Input Fields
+   ============================= */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  border-color: #8e44ad;
+  box-shadow: 0 0 4px rgba(142, 68, 173, 0.5);
+}
+
+/* =============================
+   Buttons
+   ============================= */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #8e44ad;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #732d91;
+}
+
+/* =============================
+   Forgot Password & Links
+   ============================= */
+.forgot-password {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: #8e44ad;
+  font-weight: 600;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* =============================
+   Toastify Styles
+   ============================= */
+.Toastify__toast {
+  border-radius: 10px !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* =============================
+   Responsiveness - No Scroll
+   ============================= */
+@media (max-width: 768px) {
+  .login-form {
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 90%;
+  }
+
+  .login-form h2 {
+    font-size: 1.6rem;
+  }
+
+  .login-subtext {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .login-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .login-subtext {
+    font-size: 0.85rem;
+  }
+
+  .input-group input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .login-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
